@@ -1,0 +1,11 @@
+.\objects\mcu_ini.o: Code\src\mcu_ini.c
+.\objects\mcu_ini.o: .\Code\inc\mcu_ini.h
+.\objects\mcu_ini.o: .\CMSIS\inc\stm32f30x.h
+.\objects\mcu_ini.o: .\CMSIS\inc\core_cm4.h
+.\objects\mcu_ini.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\mcu_ini.o: .\CMSIS\inc\core_cmInstr.h
+.\objects\mcu_ini.o: .\CMSIS\inc\core_cmFunc.h
+.\objects\mcu_ini.o: .\CMSIS\inc\core_cmSimd.h
+.\objects\mcu_ini.o: .\CMSIS\inc\system_stm32f30x.h
+.\objects\mcu_ini.o: .\Std_Periph\inc\stm32f30x_rcc.h
+.\objects\mcu_ini.o: .\Std_Periph\inc\stm32f30x_gpio.h
