@@ -10,3 +10,5 @@
 .\objects\main.o: .\CMSIS\inc\system_stm32f30x.h
 .\objects\main.o: .\Std_Periph\inc\stm32f30x_rcc.h
 .\objects\main.o: .\Std_Periph\inc\stm32f30x_gpio.h
+.\objects\main.o: .\Code\inc\pwm.h
+.\objects\main.o: .\Code\inc\main.h

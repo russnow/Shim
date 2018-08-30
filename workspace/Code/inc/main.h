@@ -2,6 +2,7 @@
 #define MAIN_H
 
 #include "mcu_ini.h"
+#include "pwm.h"
 
 
 #define GREEN_LD6_ON()			GPIO_SetBits(GPIOE, GPIO_Pin_15)
