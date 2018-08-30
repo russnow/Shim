@@ -28,7 +28,7 @@
 #define BLUE_LD4_ON()				GPIO_SetBits(GPIOE, GPIO_Pin_8)
 #define BLUE_LD4_OFF()			GPIO_ResetBits(GPIOE, GPIO_Pin_8)
 
-#define DELAY						100 
+#define DELAY						1000 
 
 //-------------------------------------------------------------
 // Propisyvayem rezhimy miganiya diodov

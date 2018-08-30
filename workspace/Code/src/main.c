@@ -25,7 +25,7 @@ void SysTick_Handler(void)
 						//----------------------
 						//Nazhatie i othatie cnopki
 						//----------------------
-						if (BUTTON_READ()==1)
+					if (BUTTON_READ()==1)
 						{
 												if (Button_count <5)
 												{
@@ -129,6 +129,25 @@ int main (void)
 					if (Mode_count == 0)
 					{
 						ORANGE_LD8_OFF();
+						Mode = MODE_RED_LD10 ;
+						Mode_new = 1;
+					}
+				}
+//------------------------------------------------------------------------
+//vkluchenie i vykluchenie nizhnego zelenogo dioda
+//------------------------------------------------------------------------
+								else if (Mode == MODE_RED_LD10)
+				{
+					if (Mode_new ==1)
+					{
+						Mode_count = DELAY;
+						Mode_new = 0;
+						RED_LD10_ON();
+					}
+					
+					if (Mode_count == 0)
+					{
+						RED_LD10_OFF();
 						Mode = MODE_BLUE_LD9 ;
 						Mode_new = 1;
 					}
@@ -175,11 +194,11 @@ int main (void)
 	//--------------------------------------------------------------------------------
 //vkluchenie i vykluchenie verkhnego dioda
 //--------------------------------------------------------------------------------			
-				else if (MODE_ORANGE_LD5)
+				else if (Mode == MODE_ORANGE_LD5)
 				{
 					if (Mode_new == 1)
 					{
-						Mode_count = DELAY;
+						Mode_count=DELAY;
 						Mode_new=0;
 						ORANGE_LD5_ON();
 					}
@@ -194,7 +213,7 @@ int main (void)
 //--------------------------------------------------------------------------------
 //vkluchenie i vykluchenie verkhnego dioda
 //--------------------------------------------------------------------------------				
-				else if (MODE_RED_LD3)
+				else if (Mode == MODE_RED_LD3)
 				{
 					if (Mode_new ==1)
 					{
@@ -213,7 +232,7 @@ int main (void)
 	//--------------------------------------------------------------------------------
 //vkluchenie i vykluchenie verkhnego dioda
 //--------------------------------------------------------------------------------			
-				else if (MODE_BLUE_LD4)
+				else if (Mode == MODE_BLUE_LD4)
 				{
 					if (Mode_new==1)
 					{

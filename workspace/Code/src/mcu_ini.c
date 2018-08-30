@@ -16,7 +16,7 @@ void LEDs_ini(void)
 		GPIO_Init_LED.GPIO_Speed =  GPIO_Speed_2MHz;
 		GPIO_Init_LED.GPIO_OType = GPIO_OType_PP;
 		GPIO_Init_LED.GPIO_PuPd = GPIO_PuPd_NOPULL;
-		GPIO_Init(GPIOB , &GPIO_Init_LED);
+		GPIO_Init(GPIOE , &GPIO_Init_LED);
 }
  
 //---------------------------------------------------------------------------------------------------
